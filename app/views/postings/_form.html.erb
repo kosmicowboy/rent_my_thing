@@ -56,10 +56,14 @@
   <%= f.label :street %><br>
   <%= f.text_field :street %>
 </div>
+
 <div class="field">
-  <%= f.label :state %><br>
-  <%= f.text_field :state %>
+  <!-- <%= f.label :state %><br>
+  <%= f.text_field :state %> -->
+  <%= select_tag :state, options_for_select(us_states) %>
 </div>
+
+
 
 <div class="field">
   <%= f.label :zip %><br>
